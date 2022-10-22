@@ -6,3 +6,5 @@ print(dick_old)
 new_dict = dict(zip(dick_old.values(), dick_old.keys()))
 
 print(new_dict)
+
+
