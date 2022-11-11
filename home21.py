@@ -7,6 +7,11 @@ class auto:
     mark = True
     weight = True
 
+    def __init__(self, brand, age, mark):
+        self.brand = brand
+        self.age = age
+        self.mark = mark
+
     def move(self):
         print('move')
     def birthday(self):
@@ -15,7 +20,7 @@ class auto:
     def stop(self):
         print('stop')
 
-auto_1 = auto()
+auto_1 = auto('brand', 'age', 'mark')
 auto_1.move()
 auto_1.birthday()
 auto_1.stop()
