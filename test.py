@@ -1,28 +1,8 @@
+import json
+data = {111111: ('Sam', 42), 100003: ('Tom', 12), 222043: ('Adam', 69),
+        679432: ('Jasy', 25), 980451: ('Kim', 33), 666740: ('Jasy', 15)}
 
-class Dog:
-    number_of_foot = 4
-    viviparous = True
-    tail = True
-    name = None
-
-    def __int__(self, name, number_of_foot = 4, tail = True):
-        self.name = name
-        self.number_of_foot = number_of_foot
-        self.tail = tail
-
-    def say(self):
-        print('Woof')
-
-    def go(self):
-        for item in range(1, self.number_of_foot + 1):
-            print(f'step{item}')
+with open('file_json.json', 'w') as file_json:
+    json.dump(data, file_json)
 
 
-Dog_1 = Dog('Bob',3)
-dog_1.go()
-dog_1.say()
-print(Dog_1.number_of_foot)
-dog_1.go()
-
-Dog_2 = Dog()
-Dog_2.go()

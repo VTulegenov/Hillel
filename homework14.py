@@ -13,7 +13,7 @@ while True:
     elif '-' in value and not '.' in value and value.isdigit():
         print('Вы ввели отрицательное число: ' + value)
 
-    elif '-.' in value and value.isdigit():
+    elif '-.' in value :
         print('Вы ввели отрицательное дробное число: ' + value[:1], '0', value[1:], sep='')
 
     elif '-' in value and '.' in value and value.isdigit():
